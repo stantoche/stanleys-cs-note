@@ -32,6 +32,17 @@ const questions = {
             options: [2, 5, 10],
             answer: [5]
         },
+    ],
+    "software": [
+        {
+            question: "What is 2 + 2?", 
+            options: [3, 4, 5],
+            answer: [4]
+        },
+        { question: "What is 3 * 3?",
+            options: [6, 9, 12],
+            answer: [9]
+        }
     ]
 }
 
