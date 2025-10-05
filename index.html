@@ -76,6 +76,244 @@
         <!-- Data representation (data-representation) -->
          <section id="data-representation" class="row py-3 disappear">
             <h2 class="display-5"><i class="fas fa-database"></i> Data representation</h2>
+            <h3>1.1 Number systems</h3>
+            <h4>1.1.1 How and why computers use binary to represent all forms of data</h4>
+
+            <p>The computer system is made up of millions of switches. Each of these switches must be in either of two discrete states: ON or OFF. Hence, the binary system is chosen because it only consists of 1s and 0s - where 1 and 0 correspond to ON and OFF.</p>
+
+            <p><strong>Note:</strong> Switches used in a computer make use of logic gates and are used to store and process data.</p>
+
+            <p>At this juncture, it is sufficient to say that computers use binary to represent data because <mark class="bg-warning">they (computers) are made up of switches, which can be either ON or OFF, and these states correspond to the binary digits 1 and 0</mark>.</p>
+
+            <h4>1.1.2 The denary, binary and hexadecimal number systems</h4>
+            <p><u>The denary number system</u></p>
+            <p>Denary is a base 10 number system. It uses ten separate digits, 0-9, to represent all values. It counts in multiples of 10 - where the right-most digit of any given whole number is in the place-value of 100 or unit, and the place-values increase in powers of 10 from right to left for numbers having more than one digit.</p>
+
+            <p>For instance, a three-digit number, 125, will be called out with an attention to the place-values of each of the digits:</p>
+
+            <table class="table table-bordered border-primary row">
+                <tr>
+                    <th>10<sup>n</sup></th>
+                    <td>10<sup>2</sup></td>
+                    <td>10<sup>1</sup></td>
+                    <td>10<sup>0</sup></td>
+                </tr>
+                <tr>
+                    <th>Place-values</th>
+                    <td>100 (hundreds)</td>
+                    <td>10 (tens)</td>
+                    <td>1 (units)</td>
+                </tr>
+                <tr>
+                    <th>Digits</th>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+            </table>
+
+            <p>Hence, 125, will be called out as: <strong>one hundred and twenty-five</strong>.</p>
+
+            <p><u>The binary number system</u></p>
+
+            <p>The binary number system is a base 2 number system. It uses two discrete digits, 1 and 0, to represent all values in the computer system. The digits of any given binary number increase by powers of 2 from right to left. A digit of a binary is referred to as a binary digit (or simply bits). The least significant bit is in the place-value of 2<sup>0</sup> or 1.</p>
+
+            <p>For example, we can represent the denary number, 5, as binary, thus:</p>
+
+            <table class="row table table-bordered border-primary">
+                <tr>
+                    <th>2<sup>n</sup></th>
+                    <td>2<sup>3</sup></td>
+                    <td>2<sup>2</sup></td>
+                    <td>2<sup>1</sup></td>
+                    <td>2<sup>0</sup></td>
+                </tr>
+
+                <tr>
+                    <th>Place-values</th>
+                    <td>8 (eights)</td>
+                    <td>4 (fours)</td>
+                    <td>2 (twos)</td>
+                    <td>1 (units)</td>
+                </tr>
+
+                <tr>
+                    <th>Binary digits</th>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <p>Hence, the binary number, <code>0101</code> can be called out as: <code>0 eight</code>, <code>1 four</code>, <code>0 two</code>, and <code>1 unit</code>.</p>
+
+            <p>Note: any given form of data must be converted to binary so that they can be processed by the computer.</p>
+
+            <p>Bits are stored in special memory slots called registers. Each register is a set of contiguous memory blocks that can only take one bit at a time. The size of a given register is determined by the number of memory blocks therein. Hence, you may come across such conventions as 4-bit registers, 8-bit registers, etc.</p>
+
+            <p>We can ascertain the largest possible value that can be stored in a given register by using the formula:</p>
+
+            <p><code>largest possible value in a given register = 2<sup>b</sup>-1</code>, where <code>b = number of bits</code> in the register.</p>
+
+            <p>For example, the largest possible value that can be stored in an 8-bit register can be calculated as follows:</p>
+
+            <p><code>2<sup>8</sup> - 1 = 256 - 1 = 255</code></p>
+
+            <p><u>The hexadecimal number system</u></p>
+            <p>Hexadecimal is a base 16 number system and uses 16 distinct (nonrepeating) symbols to represent all values. These symbols are the numbers <strong>0-9</strong> and the letters <strong>A-F</strong>.</p>
+
+            <p>The table below shows denary number and their corresponding hexadecimal equivalents:</p>
+
+            <table class="row table table-bordered border-primary">
+                <tr>
+                    <th>Denary</th>
+                    <th>Hexadecimal</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>F</td>
+                </tr>
+            </table>
+
+            <p>For any given hexadecimal number, the digits increase by powers of 16 from right to left, where the least significant hex digit is in the placevalue of 16<sup>0</sup> or 1 (unit).</p>
+
+            <p>For example, we can represent the denary number, <strong>3898</strong> as follows:</p>
+
+            <table class="row table table-bordered border-primary">
+                <tr>
+                    <th>16<sup>n</sup></th>
+                    <td>16<sup>2</sup></td>
+                    <td>16<sup>1</sup></td>
+                    <td>16<sup>0</sup></td>
+                </tr>
+                <tr>
+                    <th>Place-values</th>
+                    <td>256</td>
+                    <td>16</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Hexadecimal digits</th>
+                    <td>F (15)</td>
+                    <td>3 (3)</td>
+                    <td>A (10)</td>
+                </tr>
+            </table>
+
+            <p>Hence, we can call out <strong>F3A</strong> as: <code>15 two hundred and fifty-sixes, 3 sixteens, and 10 ones (or units)</code>.</p>
+
+            <p><strong>Note:</strong> the reason for using the symbols <code>A-F</code> for the denary numbers <code>10-15</code> is so only one symbol is needed for the denary number in hexadecimal.</p>
+
+            <h4>1.1.3 Converting numbers between denary, binary and hexadecimal</h4>
+
+            <p><u>Converting from binary to denary</u></p>
+            <p>We can convert a binary number to denary number using any of the methods: <u>summation of binary place-values and sum of powers of 2</u>.</p>
+
+            <p><u>Method 1: Summation of binary place-values</u></p>
+            <p>In this method, we place the given binary number, digit-by-digit, in a binary table, and then add the place-values corresponding to the binary digit, 1.</p>
+
+            <p>
+                <u>Example</u>:
+                <br>
+                Convert the binary number 11101110 to denary <br>
+                Solution:
+            </p>
+            <table class="row table table-bordered border-primary">
+                <tr>
+                    <th>2<sup>n</sup></th>
+                    <td>2<sup>7</sup></td>
+                    <td>2<sup>6</sup></td>
+                    <td>2<sup>5</sup></td>
+                    <td>2<sup>4</sup></td>
+                    <td>2<sup>3</sup></td>
+                    <td>2<sup>2</sup></td>
+                    <td>2<sup>1</sup></td>
+                    <td>2<sup>0</sup></td>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <td>128</td>
+                    <td>64</td>
+                    <td>32</td>
+                    <td>16</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>B</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </table>
+
+            <p>Therefore, <code>11101110 = 128 + 64 + 32 + 8 + 4 + 2 = <strong>238</strong></code></p>
+
+            <p><u>Method 2: Sum of powers of 2</u></p>
          </section>
 
         <!-- Data transmission (data-transmission) -->
